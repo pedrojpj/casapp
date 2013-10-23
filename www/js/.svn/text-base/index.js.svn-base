@@ -1,0 +1,47 @@
+
+require.config({
+    baseUrl: "",
+    paths: {
+        backbone: "js/vendor/backbone",
+        underscore: "js/vendor/underscore",
+        handlebars: "js/vendor/handlebars",
+        jquery: "js/vendor/jquery",
+        routes: "js/routes",
+        functions: "js/functions/",
+        views: "js/views",
+        models: "js/models/",
+        collections: "js/collections/",
+        text: "js/text",
+        templates: "js/templates",
+        literales: "js/literales"
+    },
+    shim: {
+        "handlebars": {
+            exports: "Handlebars"
+        }
+    },
+    waitSeconds: 5
+
+});
+
+
+require([
+    "routes"
+    ], function(r) {
+
+      
+    appRouter = new r.AppRouter();
+    Backbone.history.start();
+
+    
+
+
+});
+
+
+
+
+
+
+
+

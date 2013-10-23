@@ -1,0 +1,92 @@
+define(
+	[
+	"underscore",
+	"backbone",
+	"views",
+	], function(_, Backbone, views) {
+
+		var AppRouter = Backbone.Router.extend({
+			routes: {
+				"": 							"indexAction",
+				introAction:                    "introAction",
+				alertasAction: 					"alertasAction",
+				talleresAction: 				"talleresAction",
+				urgenciasAction: 				"urgenciasAction",
+				guiaSiniestroAction: 			"guiaSiniestroAction",
+				productosAction: 				"productosAction",
+				ajustesView: 					"ajustesAction",
+				listadoAlertasAction: 			"listadoAlertasAction",
+				asistenciaAction: 				"asistenciaAction",
+				solicitarAsistenciaAction: 		"solicitarAsistenciaAction",
+				contactoAction: 				"contactoAction",
+				oficinasAction: 				"oficinasAction",
+				telefonosAction: 				"telefonosAction"
+
+			},
+			initialize: function() {
+
+			},
+			indexAction: function(e) {
+
+				
+				/*
+				if (device.platform == "Android") {
+					this.introAction();
+				}
+				*/ 
+
+				new views.templateIndex();
+
+				return false;
+			},
+			introAction: function(e) {
+
+				new views.templateIntro();
+				return false;
+			},
+			alertasAction: function(e) {
+				return false;
+			},
+			talleresAction: function(e) {
+				return false;
+			},
+			urgenciasAction: function(e) {
+				return false;
+			},
+			guiaSiniestroAction: function(e) {
+				return false;
+			},
+			productoAction: function(e) {
+				return false;
+			},
+			ajustesAction: function(e) {
+				return false;
+			},
+			listadoAlertasAction: function(e) {
+				return false;
+			},
+			asistenciaAction: function(e) {
+				return false;
+			},
+			solicitarAsistenciaAction: function(e) {
+				return false;s
+			},
+			contactoAction: function(e) {
+				return false;
+			},
+			oficinasAction: function(e) {
+				view = new oficinasView();
+				return false;
+			},
+			telefonosAction: function(e) {
+				return false;
+			}
+
+		});
+
+		return {
+			AppRouter: AppRouter
+		}
+
+	}
+)

@@ -1,0 +1,57 @@
+<div class="standardPage ajustesPage">
+
+	<div class="field">
+		<div class="content">
+			<div class="text">{{literales.notificaciones}}</div>
+
+			<input type="checkbox" name="notificaciones" {{checked checkedNotification}} />
+		</div>
+	</div>
+
+	<div class="showAlertas noDisplay">
+
+		<form name="ajustesForm" action="">
+			<div class="content">
+
+				<div class="elemField">
+					<p>{{literales.alertas_text01}}:</p>
+
+					<select name="provincia">
+						<option value="0">{{literales.seleccione_provincia}}</option>
+						<option value="1">Madrid</option>
+						<option value="2">Málaga</option>
+					</select>
+
+				</div>
+
+				<div class="elemField">
+					<p>{{literales.alertas_text02}}:</p>
+
+					<select name="zona">
+						<option value="0">{{literales.seleccione_provincia}}</option>
+						<option value="1">Madrid</option>
+						<option value="2">Málaga</option>
+					</select>
+
+				</div>
+
+				<div class="elemField">
+					<p>{{literales.alertas_text03}}:</p>
+
+					<input type="text" name="nombre_alerta" placeholder="{{literales.nombre_alerta}}" />
+
+				</div>
+
+				<div class="link">
+					<a href="#alertasAction">{{literales.mis_alertas}}</a>
+				</div>
+
+			</div>
+
+			<div class="footer">
+				<button class="border3 submit" disabled>{{literales.anadir_alerta}}</button>
+			</div>	
+		</form>
+
+
+</div>

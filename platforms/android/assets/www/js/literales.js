@@ -1,0 +1,68 @@
+define ( [], function() {
+
+
+	var Literales = {
+		caser_seguros: "Caser Seguros",
+		asistencia_carretera: "Asistencia en viaje",
+		talleres: "Talleres",
+		urgencia_medica: "Urgencia médica",
+		cuadro_medico: "Cuadro médico",
+		parte_hogar: "Parte de hogar",
+		telefonos: "Teléfonos",
+		localizador_oficinas: "Localizador de oficinas",
+		guia_actuacion: "Guía de actuación",
+		contacto: "Contacto",
+		productos: "Productos",
+		ayuda: "Ayuda",
+		help_index01: "Configura las notificaciones que desea recibir",
+		help_index02: "Accesos directos a información de interés",
+		help_index03: "Localiza tu oficina más cercana o los teléfonos de interés que necesites",
+		chapa_pintura: "Chapa y pintura",
+		lunas: "Lunas",
+		verificadores: "Verificadores",
+		aceptar: "Aceptar",
+		help_talleres01: "Puedes buscar en tu dirección actual",
+		help_talleres02: "Puedes introducir una dirección para iniciar una búsqueda",
+		notificaciones: "Notificaciones",
+		ajustes: "Ajustes",
+		on: "ON",
+		off: "OFF",
+		alertas_text01: "Mostrar alertas meteorologias de la provincia seleccionada",
+		alertas_text02: "Selecciona la zona",
+		alertas_text03: "Escribe el nombre de tu alerta",
+		seleccione_zona: "Seleccione zona",
+		seleccione_provincia: "Seleccione provincia",
+		nombre_alerta: "Escribe el nombre de tu alerta",
+		anadir_alerta: "Añadir alerta",
+		mis_alertas: "Ver mi listado de alertas",
+		alerta_ok: "ALERTA GUARDADA",
+		alerta_ok02: "Su alerta ha sido añadida correctamente.",
+		listado_alertas: "Listado de alertas",
+		alerta_eliminada: "ALERTA ELIMINADA",
+		alerta_eliminada02: "Su alerta ha sido eliminada correctamente, no recibirá más alertas de este tipo",
+		error_alerta: "Ya tienes una alerta con estas características, configura otro tipo de alerta",
+		llamar: "Llamar",
+		urgencias_medicas: "Urgencias médicas",
+		guia_siniestro: "Guía en caso de siniestro",
+		hogar: "Hogar",
+		autos: "Autos",
+		contacto: "Contacto",
+		todas_provincias: "Todas las provincias",
+		oficinas: "Oficinas",
+		telefono: "Teléfono",
+		direccion: "Dirección",
+		email: "Correo electrónico",
+		servicio_asistencia: "Disfruta del servicio de asistencia en el viaje",
+		servicio_asistencia02: "24h del día / 365 días al año desde el km0",
+		solicitar_asistencia: "Solicitar asistencia",
+		telefonos_asistencia: "Teléfonos de asistencia",
+		ubicacion_actual: "Ubicación actual",
+		guia_actuacion_siniestro: "Guía de actuación en caso de siniestro",
+		seleccione_tipo_asistencia: "Seleccione el tipo de suceso sobre el que necesita asistencia"
+
+	}
+
+	return Literales;
+
+
+})

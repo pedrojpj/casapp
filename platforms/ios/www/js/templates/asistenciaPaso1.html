@@ -1,0 +1,52 @@
+<div class="standardPage asistenciaPage">
+
+	<div class="window">
+
+		<span class="shadow"></span>
+
+		<div class="field borderDotted clearfix tipoAsistencia">
+		
+			<p>{{literales.seleccione_tipo_asistencia}}:</p>
+
+			<fieldset name="radio" class="radio">
+				<input type="radio" name="tipoAsistencia" value="ACC" title="Accidente" />
+				<input type="radio" name="tipoAsistencia" value="AVE" title="Avería" />
+				<input type="radio" name="tipoAsistencia" value="OTR" title="Otros" />
+			</fieldset>
+
+		</div>	
+
+		<div class="field borderDotted matricula clearfix">
+
+			<label>{{literales.introduzca_matricula}}:</label>
+			<div class="fieldInput">
+				<input type="text" name="matricula" placeholder="ej: 1234ABC" />
+			</div>
+
+		</div>
+
+		<div class="field location clearfix">
+			<p>{{literales.ubicacion}}:</p>
+
+			<div class="fieldLegend">
+				<button class="buttonLocation">{{literales.mi_localizacion}}</button>
+				<div class="fieldInput">
+					<input type="text" name="direccion" placeholder="{{literales.calculando_ubicacion}}..." />
+				</div>
+				<button class="btnPoint">Lista</button>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="map" id="map">
+
+
+	</div>
+
+	<div class="footer">
+		<button class="border6 submit">{{literales.continuar}}</button>
+	</div>
+
+
+</div>

@@ -1,0 +1,64 @@
+define(["jquery",
+	"underscore",
+	"backbone",
+	"handlebars",
+	"literales",
+	"text!templates/intro.html",
+	"text!templates/index.html"], function($, _, Backbone, Handlebars, literales, layoutIntro, layoutIndex) {
+
+
+		var templateIntro = Backbone.View.extend({
+			el: $('body'),
+			initialize: function() {
+
+				this.render();
+			},
+			render: function() {
+
+				var data = {};
+				var source = layoutIntro;
+				var template = Handlebars.compile(source);
+				var html = template(data);
+
+				this.$el.append(html);	
+
+				setTimeout(function() {
+					$('.intro').fadeOut();
+				}, 500)		
+
+			}
+
+		});
+
+
+		var templateIndex = Backbone.View.extend({
+			el: $('.principalView'),
+			initialize: function() {
+
+				this.render();
+			},
+			render: function() {
+
+				var data = {
+					literales: literales
+				};
+
+				var source = layoutIndex;
+				var template = Handlebars.compile(source);
+				var html = template(data);
+
+
+				$('header').find("h1").html("Caser Seguros");
+				$('.principalView').html(html);				
+
+			}
+
+		});
+
+		return ({
+			templateIntro: templateIntro,
+			templateIndex: templateIndex
+		})
+
+
+	});

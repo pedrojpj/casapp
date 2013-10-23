@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/android/!svn/ver/1337/bpo-caser/trunk/phonegap/www
+END
+config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/android/!svn/ver/1336/bpo-caser/trunk/phonegap/www/config.xml
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/android/!svn/ver/1336/bpo-caser/trunk/phonegap/www/index.html
+END
+icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/android/!svn/ver/1336/bpo-caser/trunk/phonegap/www/icon.png
+END
+phonegap.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/android/!svn/ver/1336/bpo-caser/trunk/phonegap/www/phonegap.js
+END
+spec.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/android/!svn/ver/1336/bpo-caser/trunk/phonegap/www/spec.html
+END

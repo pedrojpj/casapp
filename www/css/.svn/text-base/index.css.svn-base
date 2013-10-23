@@ -1,0 +1,235 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "Helvetica Neue 57 Condensed";
+    src: url("fonts/helvetica57.otf");
+}
+
+@font-face {
+    font-family: "Helvetica Neue 67 Medium Condensed";
+    src: url("fonts/helvetica67.otf");
+}
+
+@font-face {
+    font-family: "Helvetica Neue 77 Bold Condensed";
+    src: url("fonts/helvetica77.otf");
+}
+
+body {
+    -webkit-touch-callout: none;             
+    -webkit-text-size-adjust: none;          
+    -webkit-user-select: none; 
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    overflow:none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li { margin:0; padding:0; font-weight:normal; }
+ul, li, menu { margin:0; padding:0; list-style:none;}
+a { text-decoration: none;}
+
+header {
+    height:90px;
+    width: 100%;
+    background: #fbfdfd;
+    position:relative;
+    box-shadow:  inset 0px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+header h1 {
+    text-align:center;
+    font-family: "Helvetica Neue 57 Condensed";
+    font-size: 40px;
+    color: #333333;
+    line-height: 90px;
+}
+
+header span.logo {
+    position:absolute;
+    top: 0;
+    left: 2%;
+    height: 100%;
+    width: 110px;
+    background: url("../img/logoHeader.png") no-repeat;
+    background-position:center;
+}
+
+header button.setting {
+    position:absolute;
+    right: 0;
+    top: 0;
+    border:0;
+    height: 100%;
+    background: url("../img/icoSetting.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    width: 56px;
+    text-indent: -9999px;
+    margin-right: 2%;
+
+}
+
+section {
+    height: 100%;
+    padding-top: 90px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+article {
+    padding-top: 90px;    
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*** INTRO ***/
+
+.intro {
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d6ebeb), color-stop(11%,#ddeeee), color-stop(33%,#f5fafa), color-stop(46%,#ffffff), color-stop(76%,#ffffff), color-stop(100%,#ebf5f5)); 
+}
+
+.intro .logo {
+    width: 100%;
+    height: 100%;
+    background: url("../img/logoIntro.png") no-repeat;
+    background-position: center;
+    position:absolute;
+    top: 0;
+    left: 0;
+
+}
+
+/*** HOME ***/
+
+.home {
+    padding: 1.5% 4.5%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2f0f0), color-stop(6%,#f5fafa), color-stop(10%,#fefefe), color-stop(74%,#f7f7f7), color-stop(78%,#f6f6f6), color-stop(82%,#eff3f3), color-stop(82%,#edf1f1), color-stop(94%,#d0e4e4), color-stop(100%,#c6e0e0)); /* Chrome,Safari4+ */
+    height: 100%;
+}
+
+.home li, .home ul { margin:0; padding: 0;}
+
+.home menu {
+    height: 100%;
+}
+
+.home menu ul {
+    height: 100%;
+}
+
+.home menu li { 
+    border: 1px solid #b2cacb;
+    width: 50%;
+    float:left;
+    list-style:none;
+    height: 20%;
+    margin-bottom: 5%;
+    font-family: "Helvetica Neue 57 Condensed";
+    font-size: 28px;
+    text-align:center;
+    background: #ffffff;
+}
+
+.home menu li a {
+     color: #333333;
+     text-decoration: none;   
+} 
+
+
+.home menu li:nth-child(odd) {
+    border-radius: 2px 0 0 2px;
+    border-right: 0;
+    position:relative;
+    z-index:2;    
+    box-shadow: 0 1px 3px rgba(2, 83, 85, 0.3), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.home menu li:nth-child(even) {
+    border-radius: 0 2px 2px 0;
+    box-shadow:  0 1px 3px rgba(2, 83, 85, 0.3), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+    position:relative;
+    z-index:1;
+}
+
+.home menu h3 { 
+    position:absolute;
+    bottom:27px;
+    width: 100%;
+    text-align:center;
+    left: 0;
+}
+
+/*** IPHONE < 5 ***/
+@media screen and (device-aspect-ratio: 2/3), screen and (device-aspect-ratio: 40/71) {
+
+    header {
+        height: 45px;
+    }
+
+    header h1 {
+        font-size:20px;
+        line-height: 45px;
+    }
+
+    header span.logo {
+        width: 45px;
+        background-size: 53px 36px; 
+    }
+
+    header button.setting {
+        position:absolute;
+        right: 0;
+        top: 0;
+        border:0;
+        height: 100%;
+        background-size: 28px 27px;
+        width: 28px;
+    }    
+
+    section, article {
+        padding-top: 45px;
+    }
+
+    .intro .logo {
+        background-size: 218px 149px;
+    }
+
+    .home menu li { 
+        font-size: 14px;
+    }
+
+    .home menu li:nth-child(odd) {   
+        box-shadow: 0 0.5px 1.5px rgba(2, 83, 85, 0.3), inset 0 -1.5px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    .home menu li:nth-child(even) {
+        box-shadow: 0 0.5px 1.5px rgba(2, 83, 85, 0.3), inset 0 -1.5px 0 rgba(0, 0, 0, 0.05);
+    }  
+
+    .home menu h3 { 
+        bottom: 13.5px;
+    } 
+
+
+
+}

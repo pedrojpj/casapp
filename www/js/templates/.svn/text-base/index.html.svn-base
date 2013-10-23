@@ -1,0 +1,39 @@
+<div class="home">
+
+
+	<div class="notificationCenter">
+
+
+	</div>
+
+
+	<menu>
+
+		<ul>
+			<li><a href="#">
+
+				<h3>{{literales.asistencia_carretera}}</h3>
+			</a></li>
+			<li><a href="#">
+				<h3>{{literales.talleres}}</h3>
+			</a></li>
+			<li><a href="#">
+				<h3>{{literales.urgencia_medica}}</h3>
+			</a></li>
+			<li><a href="#">
+				<h3>{{literales.cuadro_medico}}</h3>
+			</a></li>
+			<li><a href="#">
+				<h3>{{literales.parte_hogar}}</h3>
+			</a></li>
+			<li><a href="#">
+				<h3>{{literales.telefonos}}</h3>
+			</a></li>
+		</ul>
+
+	</menu>
+
+
+
+
+</div>

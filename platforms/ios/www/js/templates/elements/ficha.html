@@ -1,0 +1,40 @@
+{{#each oficina}}
+<div class="ficha">
+
+	<div class="content">
+
+		<div class="principal">
+			<p>{{provincia}}</p>
+		</div>
+
+		<div class="listView noBackground dotted">
+
+			<ul>
+				<li>
+					<div class="text">
+						<p class="title">Teléfono y fax</p>
+						<p>{{telefono}} - {{fax}}</p>
+					</div>
+					<a href="tel:{{telefono}}" class="btnDefault btnTel">LLAMAR</a>
+				</li>
+				<li>
+					<p class="title">Correo electrónico</p>
+					<p>{{email}}</p>
+					<a href="mailto:{{email}}" class="btnDefault btnTel">ESCRIBIR</a>
+				</li>
+				<li class="address">
+					<div class="text">
+						<p class="title">Dirección</p>
+						<p>{{direccion}}</p>
+					</div>
+					<button class="btnDefault btnPoint">cerrar</button>
+				</li>
+			</ul>
+
+		</div>
+
+	</div>
+
+	<span class="shadow"></span>
+</div>
+{{/each}}

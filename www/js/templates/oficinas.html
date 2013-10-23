@@ -1,0 +1,34 @@
+<div class="standardPage talleresPage oficinasPage">
+
+	<div class="listView link">
+		<span class="bottomBg"></span>
+		<span class="topBg"></span>
+
+		<div id="wrapperList">
+
+			<div id="scrollerList">
+
+				<ul>
+					{{#each oficinas }}
+					<li>
+						<a href="#oficinasMapAction/{{provincia}}">
+						<div class="text">
+							
+							<p class="title">{{provincia}}</p>
+							<p>{{direccion}}</p>
+						</div>
+						</a>
+					</li>
+					{{/each}}
+				</ul>
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+	
+</div>

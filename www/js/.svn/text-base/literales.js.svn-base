@@ -1,0 +1,17 @@
+define ( [], function() {
+	
+	var Literales = {
+		asistencia_carretera: "Asistencia en carretera",
+		talleres: "Talleres",
+		urgencia_medica: "Urgencia médica",
+		cuadro_medico: "Cuadro médico",
+		parte_hogar: "Parte de hogar",
+		telefonos: "Teléfonos"
+
+
+	}
+
+	return Literales;
+
+
+})
